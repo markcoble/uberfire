@@ -106,6 +106,11 @@ public class ShowcaseEntryPoint {
             public void execute() {
                 placeManager.goTo(new DefaultPlaceRequest("WiresGridsDemoPerspective"));
             }
+        }).endMenu().newTopLevelMenu("Simulation").respondsWith(new Command() {
+            @Override
+            public void execute() {
+                placeManager.goTo(new DefaultPlaceRequest("SimulationPerspective"));
+            }
         }).endMenu().newTopLevelMenu("Wires BPMN").respondsWith(new Command() {
             @Override
             public void execute() {

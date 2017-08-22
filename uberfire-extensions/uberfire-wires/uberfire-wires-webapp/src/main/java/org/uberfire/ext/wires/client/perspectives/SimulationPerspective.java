@@ -26,15 +26,15 @@ import org.uberfire.workbench.model.impl.PartDefinitionImpl;
 import org.uberfire.workbench.model.impl.PerspectiveDefinitionImpl;
 
 /**
- * A Perspective for Scenario Simulation
+ * A Perspective for Simulation
  */
 @ApplicationScoped
-@WorkbenchPerspective(identifier = "WiresGridsDemoPerspective")
-public class WiresGridsDemoPerspective {
+@WorkbenchPerspective(identifier = "SimulationPerspective")
+public class SimulationPerspective {
 
-    private static final String WIRES = "Wires Grid";
+    private static final String WIRES = "Simulation";
 
-    private static final String WIRES_CANVAS_SCREEN = "WiresGridsDemoPresenter";
+    private static final String WIRES_CANVAS_SCREEN = "SimulationPresenter";
 
     @Perspective
     public PerspectiveDefinition buildPerspective() {
